@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elegant Hide and Show Paragraphs</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    
+
+    .paragraph-container {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #f8f8f8;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .paragraph-container p {
+      margin: 0 0 20px 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .paragraph-container button {
+      background-color: #8c1aff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Playfair Display', serif;
+      margin-right: 12px;
+    }
+
+    .paragraph-container button:hover {
+      background-color: #7300d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="paragraph-container">
+    <p>My name is Alisha and I am currently pursuing a Bachelor of Science in Computer Science (BSCS) degree. As a driven and ambitious student, I have always been fascinated by the world of technology and the endless possibilities it presents. From a young age, I have been intrigued by the way computers and software can transform our daily lives, and this passion has only grown stronger as I have delved deeper into the field of computer science.</p>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+  </div>
+
+  <div class="paragraph-container">
+    <p>During my BSCS program, I have had the opportunity to explore various aspects of computer science, including programming, data structures, algorithms, and software engineering. However, it is the front-end development domain that has truly captured my attention. I am captivated by the way technology can be used to create visually appealing and user-friendly interfaces that seamlessly integrate with the backend systems. The combination of technical skills and creative problem-solving required for front-end development aligns perfectly with my strengths and interests.</p>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+  </div>
+
+  <div class="paragraph-container">
+    <p>As I continue my BSCS studies, I have been actively exploring and honing my front-end development skills. I have immersed myself in learning the latest web technologies, such as HTML, CSS, JavaScript, and popular front-end frameworks like React and Angular. I am constantly seeking out opportunities to apply my knowledge through personal projects and internships, where I can gain hands-on experience and further refine my skills.</p>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+  </div>
+
+  <div class="paragraph-container">
+    <p>My ultimate goal is to become a talented and versatile front-end developer, capable of creating engaging and accessible digital experiences for users. I am driven by a desire to continuously learn and improve, as I believe that the field of technology is ever-evolving, and staying ahead of the curve is crucial for success. I am committed to staying up-to-date with industry trends, best practices, and emerging technologies, so that I can provide innovative solutions to the challenges faced by clients and end-users.</p>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+  </div>
+
+  <div class="paragraph-container">
+    <p>As I near the completion of my BSCS degree, I am excited to take the next step in my career and transition into the world of front-end development. I am confident that the knowledge and skills I have acquired throughout my academic journey, combined with my passion for technology and design, will enable me to make a meaningful contribution to the companies and projects I am fortunate enough to be a part of. I am eager to embark on this new chapter and to continue growing and evolving as a front-end developer.</p>
+    <button class="hide-button">Hide</button>
+    <button class="show-button">Show</button>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $(".hide-button").click(function() {
+        $(this).closest(".paragraph-container").find("p").hide();
+      });
+
+      $(".show-button").click(function() {
+        $(this).closest(".paragraph-container").find("p").show();
+      });
+    });
+  </script>
+</body>
+</html>
